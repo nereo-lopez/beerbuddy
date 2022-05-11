@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Beer Buddy</string>
+    <string name="beerButton">Quiero cerveza.</string>
+    <string name="locationButton">¿A donde puedo ir?</string>
+    <string name="storesButton">¿Donde comprar?</string>
+
+</resources>
