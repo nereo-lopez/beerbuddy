@@ -1,2 +1,3 @@
 # beerbuddy
-Android Development Test Project
+Android Development
+This is my first App.
