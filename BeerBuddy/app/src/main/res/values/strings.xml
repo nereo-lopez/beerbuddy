@@ -1,10 +1,10 @@
+<!-- General String Resources -->
+
 <resources>
     <string name="app_name">Beer Buddy</string>
     <string name="beerButton">Quiero cerveza.</string>
     <string name="locationButton">¿A donde puedo ir?</string>
     <string name="storesButton">¿Donde comprar?</string>
     <string name="title_activity_beer_list">BeerList</string>
-
     <string name="action_settings">Settings</string>
-
 </resources>

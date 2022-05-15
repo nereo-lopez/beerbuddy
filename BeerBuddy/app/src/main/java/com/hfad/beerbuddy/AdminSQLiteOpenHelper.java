@@ -17,8 +17,6 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
         dataBase.execSQL("create table cervezas(registro int primary key, nombre text, tipo text, " +
                 "cervecera text, descripcion text)");
 
-
-
     }
 
     @Override

@@ -2,7 +2,7 @@
 <!-- This list is specifically made for the spinner-->
 <resources>
     <string-array name="beerTypes">
-        <item>Stour</item>
+        <item>Stout</item>
         <item>IPA</item>
         <item>Sour</item>
         <item>Red Ale</item>
