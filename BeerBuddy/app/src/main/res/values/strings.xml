@@ -1,10 +1,26 @@
 <!-- General String Resources -->
 
 <resources>
+    <!-- App String Resources -->
     <string name="app_name">Beer Buddy</string>
-    <string name="beerButton">Quiero cerveza.</string>
+    <string name="beerButton">Quiero una cerveza.</string>
     <string name="locationButton">¿A donde puedo ir?</string>
     <string name="storesButton">¿Donde comprar?</string>
     <string name="title_activity_beer_list">BeerList</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Database String Resources -->
+    <string name="txt_id">Numero de registro</string>
+    <string name="txt_name">Nombre de cerveza.</string>
+    <string name="txt_type">Tipo de Cerveza.</string>
+    <string name="txt_description">Descripcion de la cerveza</string>
+    <string name="txt_cervecera">Cervecera</string>
+
+    <!-- Beer String Resources -->
+    <string name="Stout">Stout</string>
+    <string name="IPA">IPA.</string>
+    <string name="Sour">Sour</string>
+    <string name="RedAle">Red Ale</string>
+    <string name="WheatBeer">Wheat Beer</string>
+    <string name="NewEngland">New England</string>
 </resources>

@@ -9,45 +9,47 @@
 
     <Button
         android:id="@+id/tap4Beer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="171dp"
+        android:layout_height="65dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="213dp"
+        android:layout_marginTop="168dp"
         android:text="@string/beerButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/tap4TRooms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="@string/locationButton"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tap4Beer"
-        app:layout_constraintStart_toEndOf="@+id/tap4Beer" />
-
-    <Button
-        android:id="@+id/tap4Stores"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:text="@string/storesButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tap4TRooms" />
-
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="324dp"
+        android:layout_height="361dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tap4Stores"
+        app:layout_constraintVertical_bias="0.777"
         app:srcCompat="@drawable/bb12" />
+
+    <Button
+        android:id="@+id/tap4Stores"
+        android:layout_width="171dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/storesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tap4TRooms" />
+
+    <Button
+        android:id="@+id/tap4TRooms"
+        android:layout_width="171dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/locationButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tap4Beer"
+        app:layout_constraintStart_toEndOf="@+id/tap4Beer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

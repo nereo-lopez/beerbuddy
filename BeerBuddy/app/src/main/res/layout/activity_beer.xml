@@ -4,27 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tasterbg"
     tools:context=".BeerActivity">
 
-    <Spinner
-        android:id="@+id/beerSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="105dp"
-        app:layout_constraintStart_toStartOf="parent"
+
+    <Button
+        android:id="@+id/stoutButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Stout"
+        app:layout_constraintBottom_toTopOf="@+id/IPAButton"
+        app:layout_constraintEnd_toEndOf="@+id/IPAButton"
+        app:layout_constraintStart_toStartOf="@+id/IPAButton"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/spinnerState"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="34dp"
-        android:text="Estado:"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/beerSpinner" />
+    <Button
+        android:id="@+id/RedAleButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/RedAle"
+        app:layout_constraintBottom_toTopOf="@+id/WheatBeerButton"
+        app:layout_constraintEnd_toEndOf="@+id/WheatBeerButton"
+        app:layout_constraintStart_toStartOf="@+id/WheatBeerButton"
+        app:layout_constraintTop_toBottomOf="@+id/SourButton" />
+
+    <Button
+        android:id="@+id/WheatBeerButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/WheatBeer"
+        app:layout_constraintBottom_toTopOf="@+id/NewEnglandButton"
+        app:layout_constraintEnd_toEndOf="@+id/NewEnglandButton"
+        app:layout_constraintStart_toStartOf="@+id/NewEnglandButton"
+        app:layout_constraintTop_toBottomOf="@+id/RedAleButton" />
+
+    <Button
+        android:id="@+id/IPAButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/IPA"
+        app:layout_constraintBottom_toTopOf="@+id/SourButton"
+        app:layout_constraintEnd_toEndOf="@+id/SourButton"
+        app:layout_constraintStart_toStartOf="@+id/SourButton"
+        app:layout_constraintTop_toBottomOf="@+id/stoutButton" />
+
+    <Button
+        android:id="@+id/NewEnglandButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/NewEngland"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/WheatBeerButton" />
+
+    <Button
+        android:id="@+id/SourButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="23dp"
+        android:text="@string/Sour"
+        app:layout_constraintBottom_toTopOf="@+id/RedAleButton"
+        app:layout_constraintEnd_toEndOf="@+id/RedAleButton"
+        app:layout_constraintStart_toStartOf="@+id/RedAleButton"
+        app:layout_constraintTop_toBottomOf="@+id/IPAButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="254dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewEnglandButton"
+        app:srcCompat="@drawable/bb12" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
