@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_stoutlist_detail"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:navGraph="@navigation/primary_details_nav_graph"
+        tools:layout="@layout/fragment_stoutlist_detail" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bpsycho"
+        app:srcCompat="@drawable/stoutbeer" />
+
+    <Button
+        android:id="@+id/mdn"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginBottom="8dp"
+        android:text="Madueno"
+        android:autoLink="all"
+        app:layout_constraintBottom_toTopOf="@+id/insurg"
+        app:layout_constraintStart_toStartOf="@+id/insurg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/insurg"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:text="Insurgente"
+        app:layout_constraintBottom_toTopOf="@+id/bpsycho"
+        app:layout_constraintEnd_toEndOf="@+id/bpsycho"
+        app:layout_constraintStart_toStartOf="@+id/bpsycho"
+        app:layout_constraintTop_toBottomOf="@+id/mdn" />
+
+    <Button
+        android:id="@+id/bpsycho"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:text="Border P."
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/insurg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

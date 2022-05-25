@@ -23,4 +23,8 @@
     <string name="RedAle">Red Ale</string>
     <string name="WheatBeer">Wheat Beer</string>
     <string name="NewEngland">New England</string>
+    <string name="title_activity_stout_list_detail_host">stoutListDetailHostActivity</string>
+    <string name="title_stoutlist_list">stoutBeers</string>
+    <string name="title_stoutlist_detail">stoutList Detail</string>
+
 </resources>

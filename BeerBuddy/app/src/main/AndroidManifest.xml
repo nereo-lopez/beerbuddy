@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.hfad.beerbuddy">
 
     <application
@@ -9,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BeerBuddy">
+        <activity
+            android:name=".stoutListDetailHostActivity"
+            android:exported="false"
+            android:label="@string/title_activity_stout_list_detail_host"
+            android:resizeableActivity="true"
+            tools:targetApi="24" />
         <activity
             android:name=".BeerActivity"
             android:exported="false" />
